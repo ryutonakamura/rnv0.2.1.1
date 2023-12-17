@@ -1,1 +1,1 @@
-rnv0.2.1.1 is an unknown virus. So antivirus software won't detect it either. (Avast detected it) There is also a dangerous version and a safe version.
+This is a very new malware.But some antiviruses have already detected it.This virus also has a dangerous version and a safe version, and the dangerous version will run and damage your system if your antivirus does not block or remove it.

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1">
+  <body bgcolor="red" text="white">
+    <h1 class="blink"><center>Your computer is infected with rn destructive virus.Click Remove Now to download and run the app dedicated to RN Destructive Virus removal.</center></h1>
+    <p class="nones" id="devicename"></p>
+    <p class="null">You need to respond immediately.<p>
+    <p class="countdown" id="nokori"></p>
+    <center><input type="button" class="button" id="button1" value="Remove Now" style="width:300px"></input>
+    <input type="button" class="button" id="button2" value="ignore" style="width:300px"></input></center>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </body>
+  <style>
+    .blink {
+        -webkit-animation: blink 1s ease infinite;
+        animation: blink 1s ease infinite;
+        color: white;
+    }
+    @-webkit-keyframes blink {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+    @keyframes blink {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+    .nones {
+        font-size:1.8em;
+    }
+    .countdown {
+        font-size:1.5em;
+    }
+    body {
+        margin:3em;
+    }
+    input {
+        font-size:19px;
+   }
+  </style>
+  <script type="text/javascript">
+    var ta = document.getElementById('devicename')
+    var msg = ""
+    var ut = navigator.userAgent;
+
+    if(ut.indexOf('iPhone') > 0){
+      msg += "Apple iPhone";
+    }else if(ut.indexOf('iPod') > 0){
+      msg += "Apple iPod";
+    }else if(ut.indexOf('Android') > 0 && ut.indexOf('Mobile') > 0){
+      msg += "Androidスマートフオン";
+    }else if(ut.indexOf('Android') > 0){
+      msg += "Android タブレット";
+    }else if(ut.indexOf('iPad') > 0 ){
+      msg += "Apple iPad";
+    }else{
+      msg +="PC";
+    }
+  </script>
+  <script type="text/javascript">
+    const totalTime = 32000;
+    const oldTime = Date.now();
+
+    const timeId = setInterval(() => {
+    const currentTime = Date.now();
+
+    const diff = currentTime - oldTime;
+
+    const diffSec = totalTime - diff;
+
+    const remainSec = Math.ceil(diffSec / 1000);
+
+    let text = `reaming time${remainSec}second`;
+
+    if (diffSec <= 0) {
+      clearInterval(timeId);
+
+      text = "The virus has spread. Your system is already corrupted.";
+    }
+
+      ta = document.getElementById("nokori")
+      ta.textContent = text;
+    })
+    document.getElementById("button1").onclick = function() {
+      window.location.href = 'https://programming-self-study.blogspot.com';
+    };
+    document.getElementById("button2").onclick = function() {
+      window.location.href = 'https://programming-self-study.blogspot.com';
+    };
+  </script>
+</html>
